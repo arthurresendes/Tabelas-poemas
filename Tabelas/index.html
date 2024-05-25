@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 400px;
+            padding: 8px;
+            border-collapse: collapse;
+            /*Formas de mudar posição*/
+
+            vertical-align: middle; /*Vertical*/
+            text-align: center; /*Horizontal*/
+        }
+
+        tr.linha {
+            background-color: blueviolet;
+        }
+
+        td.amarelo {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+    </style>
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Minha primeira tabela.</h1>
+    <!--
+      table=tabela
+      table rows=linha de tabela
+      table header=cabeçalho de tabela 
+      table data=dados de tabela
+    -->
+
+
+    <table>
+        <th>
+            Minha primeira tabela
+        </th>
+
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td class="amarelo">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <p>tr são as linhas da tabela.</p>
+    <p>td são os dados da tabela.</p>
+    <p>th é o cabeçalho da tabela.</p>
+    <p>border-collapse=collapse(juntos os dados),separed(separado os dados).</p>
+</body>
+
+</html>
