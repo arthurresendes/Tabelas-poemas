@@ -28,6 +28,16 @@
             max-width: 1000px;
         }
 
+        caption{
+            border: 2px solid rgba(0, 0, 0, 0.425);
+            border-color: rgb(0, 0, 0);
+            border-radius: 5px 5px 0px 0px;
+            box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.322);
+            font: normal bold 1.8em  Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
         td,th {
             border: 3px solid black;
             padding: 10px;
@@ -45,10 +55,13 @@
 <body>
     <h1>Top 3 Estados mais populosos</h1>
     <table>
+        <caption>
+            População de SP,MG e RJ
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -71,7 +84,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes dos 3 Estados:</th>
+                <th scope="row">Total de habitantes dos 3 Estados:</th>
                 <td class="num">81 013 701</td>
             </tr>
         </tfoot>
