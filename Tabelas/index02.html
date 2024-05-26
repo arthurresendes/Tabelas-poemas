@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        h1{
+        h1 {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 3em;
             font-weight: bolder;
@@ -26,37 +26,55 @@
             margin: auto;
             min-width: 300px;
             max-width: 1000px;
+            position: relative;
         }
 
-        caption{
+        caption {
             border: 2px solid rgba(0, 0, 0, 0.425);
             border-color: rgb(0, 0, 0);
             border-radius: 5px 5px 0px 0px;
             box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.322);
-            font: normal bold 1.8em  Arial, Helvetica, sans-serif;
+            font: normal bold 1.8em Arial, Helvetica, sans-serif;
             background-color: lightgray;
             padding: 10px;
         }
 
-        td,th {
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: rgba(211, 211, 211, 0.623);
+            text-decoration: underline;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        td,
+        th {
             border: 3px solid black;
             padding: 10px;
         }
 
-        thead,tfoot{
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
-
     </style>
     <title>Tabelas</title>
 </head>
 
 <body>
-    <h1>Top 3 Estados mais populosos</h1>
+    <h1>Os 15Estados mais populosos do Brasil.</h1>
     <table>
         <caption>
-            População de SP,MG e RJ
+            População dos 15 Estados
         </caption>
         <thead>
             <tr>
@@ -68,24 +86,80 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">44.420.459</td>
+                <td>44.420.459</td>
             </tr>
 
             <tr>
                 <td>Minas gerais</td>
-                <td class="num">20 538 718</td>
+                <td>20 538 718</td>
             </tr>
 
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">16 054 524</td>
+                <td>Bahia</td>
+                <td>14 141 626</td>
             </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td>8 794 957</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td>8 121 025</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 610 361</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td>7 056 495</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td>6 775 805</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td>3 974 687</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td>3 941 613</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 833 712</td>
+            </tr>
+
         </tbody>
 
         <tfoot>
             <tr>
                 <th scope="row">Total de habitantes dos 3 Estados:</th>
-                <td class="num">81 013 701</td>
+                <td>160.595.734</td>
             </tr>
         </tfoot>
     </table>
