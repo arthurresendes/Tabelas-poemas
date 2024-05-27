@@ -15,11 +15,14 @@
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
         }
 
+        div#container{
+            overflow-x: auto;
+        }
+
         thead {
             position: sticky;
             top: 0;
             background-color: rgba(99, 99, 99, 0.836);
-            
         }
 
         th{
@@ -53,95 +56,90 @@
 </head>
 
 <body>
-    <table>
-        <caption>
-            Meu desafio 02
-        </caption>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas </th>
-                <th rowspan=" 2">Médias</th>
-            </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>nota 2</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td rowspan="5" class="bold">Exatas</td>
-            </tr>
-
-            <tr> 
-                <td>Matemática</td>
-                <td>8,0</td>
-                <td>10,0</td>
-                <td>9,0</td>
-                
-            </tr>
-
-            <tr> 
-                <td>Física</td>
-                <td>10,0</td>
-                <td>9,0</td>
-                <td>9,5</td>
-                
-            </tr>
-
-            <tr> 
-                <td>Quimica</td>
-                <td>4,0</td>
-                <td>8,0</td>
-                <td>6,0</td>
-                
-            </tr>
-
-            <tr> 
-                <td>Biologia</td>
-                <td>6,0</td>
-                <td>7,0</td>
-                <td>6,5</td>
-            </tr>
-        </tbody>
-
-        <thead>
-            <tr>
-                <th colspan="4">Media total</th>
-                <th>7,7</th>
-            </tr>
-        </thead>
-
-        <tbody>
+    <div class="container">
+        <table>
+            <caption>
+                Meu desafio 02
+            </caption>
+            <thead>
                 <tr>
-                    <td rowspan="3" class="bold">Humanas</td>
+                    <th rowspan="2">Área</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas </th>
+                    <th rowspan=" 2">Médias</th>
                 </tr>
-    
-                <tr> 
-                    <td>História</td>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" class="bold">Exatas</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>8,0</td>
+                    <td>10,0</td>
                     <td>9,0</td>
-                    <td>5,0</td>
+        
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>10,0</td>
+                    <td>9,0</td>
+                    <td>9,5</td>
+        
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>4,0</td>
+                    <td>8,0</td>
+                    <td>6,0</td>
+        
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>6,0</td>
                     <td>7,0</td>
-                    
+                    <td>6,5</td>
                 </tr>
-    
-                <tr> 
-                    <td>Geografia</td>
-                    <td>8,0</td>
-                    <td>8,0</td>
-                    <td>8,0</td>
-                    
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="4">Media total</th>
+                    <th>7,7</th>
                 </tr>
-        </tbody>
-        <thead>
-            <tr>
-                <th colspan="4">Media total</th>
-                <th>7,5</th>
-            </tr>
-        </thead>
-    </table>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td rowspan="3" class="bold">Humanas</td>
+                    </tr>
+        
+                    <tr>
+                        <td>História</td>
+                        <td>9,0</td>
+                        <td>5,0</td>
+                        <td>7,0</td>
+        
+                    </tr>
+        
+                    <tr>
+                        <td>Geografia</td>
+                        <td>8,0</td>
+                        <td>8,0</td>
+                        <td>8,0</td>
+        
+                    </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="4">Media total</th>
+                    <th>7,5</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 
 </body>
 
