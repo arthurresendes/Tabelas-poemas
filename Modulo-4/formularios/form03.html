@@ -5,40 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 03</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font: italic normal 2.5em  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            background-image: linear-gradient(90deg,lightblue,transparent);
+            border: 2px solid rgba(0, 0, 0, 0.253);
+            border-radius: 0px 25px;
+        }
+
+        form p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        p label{
+            font: normal bold 1.6em Arial, Helvetica, sans-serif;
+            padding-right: 5px;
+        }
+
+        div  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Teste Média</h1>
     <form action="cadastro.php" method="post">
-        <p><label for="inome">Nome</label>
+        <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo"
                 autocomplete="name">
         </p>
 
         <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5"
-                required>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
         </p>
 
         <p>
-            <label for="imes">Período Letivo</label>
+            <label for="imes">Período Letivo:</label>
             <input type="month" name="mes" id="imes" required placeholder="Período" value="2020-07">
         </p>
 
         <p>
-            <label for="idata">Dia</label>
+            <label for="idata">Dia:</label>
             <input type="date" name="data" id="idata" required placeholder="dia" value="2020-07-14">
         </p>
 
         <p>
-            <label for="ihora">Horarío da prova</label>
-            <input type="time" name="hora" id="ihora" required placeholder="dia" >
+            <label for="ihora">Horarío da prova:</label>
+            <input type="time" name="hora" id="ihora" required placeholder="dia">
         </p>
 
-        <p><input type="submit" value="Enviar">
+        <div><input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
+        </div>
     </form>
 </body>
 
