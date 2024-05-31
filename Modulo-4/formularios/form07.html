@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 0px;
+        }
+
+        h1 {
+            font: italic bolder 2.6em Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: 1px dashed rgba(0, 0, 0, 0.493);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+            background-image: linear-gradient(90deg, rgba(144, 238, 144, 0.555), transparent);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        fieldset {
+            border-radius: 0px 10px;
+            padding: 20px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label{
+            font: normal bold 1.5em normal;
+        }
+    </style>
+    <title>Exemplos de formulário</title>
+</head>
+
+<body>
+    <h1>Exemplos de form sem input</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <label for="iest">Estados</label>
+            <select name="est" id="iest">
+                <option value="" selected>--Estado--</option>
+                <optgroup label="Regiões Sudeste">
+                    <option value="ES">Espiríto Santo</option>
+                    <option value="MG">Minas Gerias</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Pualo</option>
+                </optgroup>
+
+                <optgroup label="Regiões Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="EGS">Engenheiro de Software</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
