@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="jogos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela login</title>
+</head>
+
+<body>
+    <img src="fundo.webp" alt="">
+    <div class="entrar">
+        <div class="content">
+            <h2 class="h2">Logue aqui</h2>
+            <form action="cadastro.php" method="post">
+                <div class="inputBox">
+                    <label for="itex" class="is">Usuário:</label>
+                    <input type="text" name="texto" id="itex" required placeholder="Seu Usuario" minlength="5"
+                        maxlength="30">
+                </div>
+                <div class="inputBox">
+                    <label for="ise" class="is">Senha:</label>
+                    <input type="password" name="senha" id="ise" placeholder="Senha" required minlength="6"
+                        maxlength="15">
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        window.revelar = ScrollReveal({ reset: true })
+
+        revelar.reveal('.entrar', {
+            duration: 1500,
+            distance: '90px'
+        })
+
+        revelar.reveal('.inputBox', {
+            duration: 1500,
+            distance: '90px',
+            delay: 500
+        })
+
+        revelar.reveal('.h2', {
+            duration: 1500,
+            distance: '90px'
+        })
+    </script>
+</body>
+
+</html>
